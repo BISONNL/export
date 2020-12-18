@@ -6,4 +6,5 @@ De documentatie is te vinden op de [BISON website](http://bison.dova.nu/standaar
 
 De structuur is gedefinieerd in het XSD van het *NL NeTEx Profiel* hier op github - zoek de juiste [release](http://github.com/BISONNL/NeTEx-NL/releases)!
 
-De actuele versies van de lijsten en enumeraties staan hier op github in de [submap xml](http://github.com/BISONNL/export/tree/master/xml).
+De actuele versies staan in de [submap xml](http://github.com/BISONNL/export/tree/master/xml).
+Eerdere versies zijn terug te vinden als oude [releases](http://github.com/BISONNL/export/releases)
