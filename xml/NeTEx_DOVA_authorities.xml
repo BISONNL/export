@@ -5,20 +5,21 @@
 <!--                                                                                   -->
 <!-- Historie:                                                                         -->
 <!--   v20201218  (dec.2020)  initiële (concept)versie                                 -->
+<!--   v20210128  (jan.2021)  eerste volledige versie                                  -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <PublicationDelivery xmlns="http://www.netex.org.uk/netex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.netex.org.uk/netex https://github.com/BISONNL/NeTEx-NL/raw/master/xsd/netex-nl-geen-constraints.xsd" version="ntx:1.1">
-	<PublicationTimestamp>2020-12-18T00:00:00Z</PublicationTimestamp>
+	<PublicationTimestamp>2021-01-28T00:00:00Z</PublicationTimestamp>
 	<ParticipantRef>BISON</ParticipantRef>
 	<Description>Export van de door DOVA voorgedefinieerde gegevens t.b.v. het NL NeTEx Profiel.</Description>
 	<dataObjects>
-		<CompositeFrame id="DOVA:CompositeFrame:PredefinedAuthorities" version="20201218">
+		<CompositeFrame id="DOVA:CompositeFrame:PredefinedAuthorities" version="20210128">
 			<Description>De door DOVA 'centraal' bijgehouden lijst met concessieverleners. Desgewenst kan men de relevante lijstelementen ongewijzigd(!) overnemen in een gegevenslevering conform het NL dienstregeling Profiel.</Description>
 			<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_DOVA_LISTS" version="9.2.0"/>
 			<FrameDefaults>
 				<DefaultCodespaceRef ref="BISON:Codespace:DOVA"/>
 			</FrameDefaults>
 			<frames>
-				<GeneralFrame id="DOVA:GeneralFrame:ConcessieVerleners" version="20201218">
+				<GeneralFrame id="DOVA:GeneralFrame:ConcessieVerleners" version="20210128">
 					<Description>Lijst met voorgedefinieerde identificaties van concessieverleners.</Description>
 					<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_AuthorityList" version="9.2.0"/>
 					<members>
