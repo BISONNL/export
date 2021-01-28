@@ -73,12 +73,6 @@
 					<XmlnsUrl>http://bison.dova.nu/ns/NS</XmlnsUrl>
 					<Description>Nederlandse Spoorwegen</Description>
 				</Codespace>
-				<Codespace id="BISON:Codespace:SYNTUS">
-					<Xmlns>SYNTUS</Xmlns>
-					<XmlnsUrl>http://bison.dova.nu/ns/SYNTUS</XmlnsUrl>
-					<Description>Syntus (nu: Keolis Nederland)</Description>
-					<!-- Dit domein wordt per x-x-2021 vervangen door domein KEOLIS -->
-				</Codespace>
 				<Codespace id="BISON:Codespace:KEOLIS">
 					<Xmlns>KEOLIS</Xmlns>
 					<XmlnsUrl>http://bison.dova.nu/ns/KEOLIS</XmlnsUrl>

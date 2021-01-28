@@ -1856,7 +1856,7 @@
 						<TariffZone id="DOVA:TariffZone:6542" version="any"><Name>zone 6542</Name><ShortName>6542</ShortName><Description>Voorpeel</Description></TariffZone>
 						<TariffZone id="DOVA:TariffZone:6543" version="any"><Name>zone 6543</Name><ShortName>6543</ShortName><Description>Brouwhuis</Description></TariffZone>
 						<TariffZone id="DOVA:TariffZone:6544" version="any"><Name>zone 6544</Name><ShortName>6544</ShortName><Description/></TariffZone>
-						<TariffZone id="DOVA:TariffZone:6545" version="any"><Name>zone 6545</Name><ShortName>6545</ShortName><Description>Beek en Donk</Description></TariffZone>
+						<TariffZone id="DOVA:TariffZone:6545" version="any"><Name>zone 6545</Name><ShortName>6545</ShortName><Description>Beek&amp;Donk</Description></TariffZone>
 						<TariffZone id="DOVA:TariffZone:6547" version="any"><Name>zone 6547</Name><ShortName>6547</ShortName><Description>Someren</Description></TariffZone>
 						<TariffZone id="DOVA:TariffZone:6548" version="any"><Name>zone 6548</Name><ShortName>6548</ShortName><Description>Someren-Eind</Description></TariffZone>
 						<TariffZone id="DOVA:TariffZone:6549" version="any"><Name>zone 6549</Name><ShortName>6549</ShortName><Description>Budelerbergen</Description></TariffZone>
