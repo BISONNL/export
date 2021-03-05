@@ -6,20 +6,21 @@
 <!-- Historie:                                                                         -->
 <!--   v20201218  (dec.2020)  initiële (concept)versie                                 -->
 <!--   v20210128  (jan.2021)  eerste volledige versie                                  -->
+<!--   v20210305  (mrt.2021)  diverse Name, Description en status bijgewerkt           -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <PublicationDelivery xmlns="http://www.netex.org.uk/netex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.netex.org.uk/netex https://github.com/BISONNL/NeTEx-NL/raw/master/xsd/netex-nl-geen-constraints.xsd" version="ntx:1.1">
-	<PublicationTimestamp>2021-01-28T00:00:00Z</PublicationTimestamp>
+	<PublicationTimestamp>2021-03-05T15:30:00Z</PublicationTimestamp>
 	<ParticipantRef>BISON</ParticipantRef>
 	<Description>Export van de door DOVA voorgedefinieerde gegevens t.b.v. het NL NeTEx Profiel.</Description>
 	<dataObjects>
-		<CompositeFrame id="DOVA:CompositeFrame:PredefinedNetworks" version="20210128">
+		<CompositeFrame id="DOVA:CompositeFrame:PredefinedNetworks" version="20210305">
 			<Description>De door DOVA 'centraal' bijgehouden lijst met concessies. Desgewenst kan men de relevante lijstelementen ongewijzigd(!) overnemen in een gegevenslevering conform het NL dienstregeling Profiel.</Description>
 			<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_DOVA_LISTS" version="9.2.0"/>
 			<FrameDefaults>
 				<DefaultCodespaceRef ref="BISON:Codespace:DOVA"/>
 			</FrameDefaults>
 			<frames>
-				<GeneralFrame id="DOVA:GeneralFrame:Concessies" version="20210128">
+				<GeneralFrame id="DOVA:GeneralFrame:Concessies" version="20210305">
 					<Description>Lijst met voorgedefinieerde identificaties van concessies. Voor elke concessie is naast het eigenlijke element (Network) ook een ondersteunend element (TransportAdministrativeZone) gedefinieerd t.b.v. verwijzingen vanuit een ResponsibilitySet.</Description>
 					<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_NetworkList" version="9.2.0"/>
 					<members>
@@ -50,7 +51,7 @@
 						<Network id="DOVA:Network:AML" version="any">
 							<Name>Amstelland - Meerlanden</Name>
 							<ShortName>AML</ShortName>
-							<Description>Amstelland - Meerlanden</Description>
+							<Description>De gemeenten Aalsmeer, Amstelveen, Haarlemmermeer, Ouder-Amstel en Uithoorn, plus enkele uitlopers naar Amsterdam, Haarlem, Mijdrecht en Wilnis</Description>
 							<TransportMode>bus</TransportMode>
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:VRA" version="any"/>
@@ -59,7 +60,7 @@
 							<Name>Amstelland - Meerlanden</Name>
 							<ShortName>AML</ShortName>
 						</TransportAdministrativeZone>
-						<Network id="DOVA:Network:ASL" version="any">
+						<Network id="DOVA:Network:ASL" version="any" status="inactive">
 							<Name>Airport Shuttle Lelystad</Name>
 							<ShortName>ASL</ShortName>
 							<Description>Airport Shuttle Lelystad</Description>
@@ -67,11 +68,11 @@
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:FLV" version="any"/>
 						</Network>
-						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:ASL" version="any">
+						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:ASL" version="any" status="inactive">
 							<Name>Airport Shuttle Lelystad</Name>
 							<ShortName>ASL</ShortName>
 						</TransportAdministrativeZone>
-						<Network id="DOVA:Network:BD" version="any">
+						<Network id="DOVA:Network:BD" version="any" status="inactive">
 							<Name>Berkel-Dinkel</Name>
 							<ShortName>BD</ShortName>
 							<Description>Berkel-Dinkel</Description>
@@ -79,7 +80,7 @@
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:GLDOVS" version="any"/>
 						</Network>
-						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:BD" version="any">
+						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:BD" version="any" status="inactive">
 							<Name>Berkel-Dinkel</Name>
 							<ShortName>BD</ShortName>
 						</TransportAdministrativeZone>
@@ -115,7 +116,7 @@
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:PZH" version="any"/>
 						</Network>
-						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:DAV" version="any">
+						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:DAV" version="any" status="inactive">
 							<Name>Drechtsteden, Alblasserwaard, Vijfheerenlanden</Name>
 							<ShortName>DAV</ShortName>
 						</TransportAdministrativeZone>
@@ -151,12 +152,12 @@
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:ZLD" version="any"/>
 						</Network>
-						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:FFVB" version="any">
+						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:FFVB" version="any" status="inactive">
 							<Name>Fast Ferry Vlissingen-Breskens</Name>
 							<ShortName>FFVB</ShortName>
 						</TransportAdministrativeZone>
 						<Network id="DOVA:Network:GD" version="any">
-							<Name>Groningen - Drenthe</Name>
+							<Name>GD-concessie</Name>
 							<ShortName>GD</ShortName>
 							<Description>Groningen - Drenthe</Description>
 							<TransportMode>bus</TransportMode>
@@ -180,33 +181,33 @@
 							<ShortName>GOOI</ShortName>
 						</TransportAdministrativeZone>
 						<Network id="DOVA:Network:GVB" version="any">
-							<Name>Stadsvervoer Amsterdam</Name>
+							<Name>Concessie Amsterdam</Name>
 							<ShortName>GVB</ShortName>
-							<Description>Stadsvervoer Amsterdam</Description>
+							<Description>Het netwerk van bus- tram- en metrolijnen door de gemeenten Amsterdam, Diemen en Ouder-Amstel, met uitlopers naar Amstelveen, Weesp en Schiphol</Description>
 							<TransportMode>all</TransportMode>
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:VRA" version="any"/>
 						</Network>
 						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:GVB" version="any">
-							<Name>Stadsvervoer Amsterdam</Name>
+							<Name>Concessie Amsterdam</Name>
 							<ShortName>GVB</ShortName>
 						</TransportAdministrativeZone>
 						<Network id="DOVA:Network:HGL-R" version="any">
-							<Name>Rail Haaglanden</Name>
+							<Name>Concessie Rail Haaglanden</Name>
 							<ShortName>HGL-R</ShortName>
-							<Description>Rail Haaglanden</Description>
+							<Description>Tram en RandstadRail lijn 3 en 4 in de regio Haaglanden</Description>
 							<TransportMode>tram</TransportMode>
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:MRDH" version="any"/>
 						</Network>
 						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:HGL-R" version="any">
-							<Name>Rail Haaglanden</Name>
+							<Name>Concessie Rail Haaglanden</Name>
 							<ShortName>HGL-R</ShortName>
 						</TransportAdministrativeZone>
-						<Network id="DOVA:Network:HGL-STD" version="any" status="inactive">
+						<Network id="DOVA:Network:HGL-STD" version="any">
 							<Name>Bus Haaglanden Stad</Name>
 							<ShortName>HGL-STD</ShortName>
-							<Description>Bus Haaglanden Stad</Description>
+							<Description>Busvervoer in Den Haag, Leidschendam-Voorburg en Rijswijk</Description>
 							<TransportMode>bus</TransportMode>
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:MRDH" version="any"/>
@@ -216,19 +217,19 @@
 							<ShortName>HGL-STD</ShortName>
 						</TransportAdministrativeZone>
 						<Network id="DOVA:Network:HGL-STR" version="any">
-							<Name>Regionaal busvervoer Haaglanden</Name>
+							<Name>Haaglanden Streek</Name>
 							<ShortName>HGL-STR</ShortName>
-							<Description>Regionaal busvervoer Haaglanden</Description>
+							<Description>Busvervoer in Delft, Midden-Delfland, Pijnacker-Nootdorp, Westland, Wassenaar en Zoetermeer</Description>
 							<TransportMode>bus</TransportMode>
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:MRDH" version="any"/>
 						</Network>
 						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:HGL-STR" version="any">
-							<Name>Regionaal busvervoer Haaglanden</Name>
+							<Name>Haaglanden Streek</Name>
 							<ShortName>HGL-STR</ShortName>
 						</TransportAdministrativeZone>
 						<Network id="DOVA:Network:HLM-IJM" version="any">
-							<Name>Haarlem - IJmond</Name>
+							<Name>Haarlem / IJmond</Name>
 							<ShortName>HLM-IJM</ShortName>
 							<Description>Haarlem/IJmond</Description>
 							<TransportMode>bus</TransportMode>
@@ -236,7 +237,7 @@
 							<AuthorityRef ref="DOVA:Authority:PNH" version="any"/>
 						</Network>
 						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:HLM-IJM" version="any">
-							<Name>Haarlem - IJmond</Name>
+							<Name>Haarlem / IJmond</Name>
 							<ShortName>HLM-IJM</ShortName>
 						</TransportAdministrativeZone>
 						<Network id="DOVA:Network:HOV-GD" version="any" status="inactive">
@@ -247,24 +248,24 @@
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:OVGD" version="any"/>
 						</Network>
-						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:HOV-GD" version="any">
+						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:HOV-GD" version="any" status="inactive">
 							<Name>HOV Groningen-Drenthe</Name>
 							<ShortName>HOV-GD</ShortName>
 						</TransportAdministrativeZone>
 						<Network id="DOVA:Network:HWGO" version="any">
-							<Name>Hoeksche Waard - Goeree Overvlakkee</Name>
+							<Name>Hoeksche Waard/Goeree-Overflakkee</Name>
 							<ShortName>HWGO</ShortName>
-							<Description>Hoeksche Waard/Goerree Overflakkee</Description>
+							<Description>Het openbaar vervoer in de gemeenten Hoeksche Waard en Goeree-Overflakkee, alsmede de busdiensten tussen deze gemeenten en Rotterdam, Dordrecht, Barendrecht, Hellevoetsluis-Spijkenisse, Renesse en Willemstad</Description>
 							<TransportMode>bus</TransportMode>
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:PZH" version="any"/>
 						</Network>
 						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:HWGO" version="any">
-							<Name>Hoeksche Waard - Goeree Overvlakkee</Name>
+							<Name>Hoeksche Waard/Goeree-Overflakkee</Name>
 							<ShortName>HWGO</ShortName>
 						</TransportAdministrativeZone>
 						<Network id="DOVA:Network:IJSM" version="any">
-							<Name>IJsselmond</Name>
+							<Name>IJsselmond 2014-2023</Name>
 							<ShortName>IJSM</ShortName>
 							<Description>IJsselmond</Description>
 							<TransportMode>bus</TransportMode>
@@ -272,11 +273,11 @@
 							<AuthorityRef ref="DOVA:Authority:OVFLV" version="any"/>
 						</Network>
 						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:IJSM" version="any">
-							<Name>IJsselmond</Name>
+							<Name>IJsselmond 2014-2023</Name>
 							<ShortName>IJSM</ShortName>
 						</TransportAdministrativeZone>
 						<Network id="DOVA:Network:IJSV" version="any">
-							<Name>IJssel-Vecht</Name>
+							<Name>Noodconcessie IJssel-Vecht</Name>
 							<ShortName>IJSV</ShortName>
 							<Description>IJssel - Vecht</Description>
 							<TransportMode>bus</TransportMode>
@@ -284,7 +285,7 @@
 							<AuthorityRef ref="DOVA:Authority:OVOOST" version="any"/>
 						</Network>
 						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:IJSV" version="any">
-							<Name>IJssel-Vecht</Name>
+							<Name>Noodconcessie IJssel-Vecht</Name>
 							<ShortName>IJSV</ShortName>
 						</TransportAdministrativeZone>
 						<Network id="DOVA:Network:LLS" version="any">
@@ -319,7 +320,7 @@
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:OVS" version="any"/>
 						</Network>
-						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:MO" version="any">
+						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:MO" version="any" status="inactive">
 							<Name>Midden-Overijssel</Name>
 							<ShortName>MO</ShortName>
 						</TransportAdministrativeZone>
@@ -350,7 +351,7 @@
 						<Network id="DOVA:Network:PARKSHUT" version="any">
 							<Name>Parkshuttle Rivium</Name>
 							<ShortName>PARKSHUT</ShortName>
-							<Description>Parkshuttle Rivium</Description>
+							<Description>De onbemande busdienst tussen metrostation Kralingse Zoom en bedrijventerrein Rivium</Description>
 							<TransportMode>bus</TransportMode>
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:MRDH" version="any"/>
@@ -371,10 +372,10 @@
 							<Name>Provincie Utrecht</Name>
 							<ShortName>PUT</ShortName>
 						</TransportAdministrativeZone>
-						<Network id="DOVA:Network:RTD-B" version="any" status="inactive">
+						<Network id="DOVA:Network:RTD-B" version="any">
 							<Name>Bus Rotterdam e.o.</Name>
 							<ShortName>RTD-B</ShortName>
-							<Description>Bus Rotterdam e.o.</Description>
+							<Description>Busvervoer in Albrandswaard, Capelle aan den IJssel, Rotterdam, Schiedam, Vlaardingen, Barendrecht, Krimpen aan den IJssel, Lansingerland, Maassluis en Ridderkerk</Description>
 							<TransportMode>bus</TransportMode>
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:MRDH" version="any"/>
@@ -384,18 +385,18 @@
 							<ShortName>RTD-B</ShortName>
 						</TransportAdministrativeZone>
 						<Network id="DOVA:Network:RTD-R" version="any">
-							<Name>Rail Rotterdam</Name>
+							<Name>Concessie Rail Rotterdam</Name>
 							<ShortName>RTD-R</ShortName>
-							<Description>Rail Rotterdam</Description>
+							<Description>Tram en metro in de regio Rotterdam, inclusief RandstadRail lijn E naar Den Haag Centraal</Description>
 							<TransportMode>metro</TransportMode>
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:MRDH" version="any"/>
 						</Network>
 						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:RTD-R" version="any">
-							<Name>Rail Rotterdam</Name>
+							<Name>Concessie Rail Rotterdam</Name>
 							<ShortName>RTD-R</ShortName>
 						</TransportAdministrativeZone>
-						<Network id="DOVA:Network:RW" version="any">
+						<Network id="DOVA:Network:RW" version="any" status="inactive">
 							<Name>Rijn-Waal</Name>
 							<ShortName>RW</ShortName>
 							<Description>Rijn-Waal</Description>
@@ -403,7 +404,7 @@
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:GLD" version="any"/>
 						</Network>
-						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:RW" version="any">
+						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:RW" version="any" status="inactive">
 							<Name>Rijn-Waal</Name>
 							<ShortName>RW</ShortName>
 						</TransportAdministrativeZone>
@@ -444,7 +445,7 @@
 							<ShortName>TW</ShortName>
 						</TransportAdministrativeZone>
 						<Network id="DOVA:Network:U-OV" version="any">
-							<Name>Tram en Bus Regio Utrecht + Vijfheerenlanden</Name>
+							<Name>Tram en Bus Regio Utrecht</Name>
 							<ShortName>U-OV</ShortName>
 							<Description>Tram en Bus Regio Utrecht + Vijfheerenlanden</Description>
 							<TransportMode>all</TransportMode>
@@ -452,7 +453,7 @@
 							<AuthorityRef ref="DOVA:Authority:PUT" version="any"/>
 						</Network>
 						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:U-OV" version="any">
-							<Name>Tram en Bus Regio Utrecht + Vijfheerenlanden</Name>
+							<Name>Tram en Bus Regio Utrecht</Name>
 							<ShortName>U-OV</ShortName>
 						</TransportAdministrativeZone>
 						<Network id="DOVA:Network:U-OV-tm2018" version="any" status="inactive">
@@ -463,11 +464,11 @@
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:PUT" version="any"/>
 						</Network>
-						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:U-OV-tm2018" version="any">
+						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:U-OV-tm2018" version="any" status="inactive">
 							<Name>Tram en Bus Regio Utrecht</Name>
 							<ShortName>U-OV-tm2018</ShortName>
 						</TransportAdministrativeZone>
-						<Network id="DOVA:Network:VE" version="any">
+						<Network id="DOVA:Network:VE" version="any" status="inactive">
 							<Name>Veluwe</Name>
 							<ShortName>VE</ShortName>
 							<Description>Veluwe</Description>
@@ -475,14 +476,14 @@
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:GLD" version="any"/>
 						</Network>
-						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:VE" version="any">
+						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:VE" version="any" status="inactive">
 							<Name>Veluwe</Name>
 							<ShortName>VE</ShortName>
 						</TransportAdministrativeZone>
 						<Network id="DOVA:Network:VPR" version="any">
 							<Name>Voorne-Putten en Rozenburg</Name>
 							<ShortName>VPR</ShortName>
-							<Description>Voorne-Putten en Rozenburg</Description>
+							<Description>Busvervoer in Nissewaard, Brielle, Hellevoetsluis, Westvoorne en de kern Rozenburg (gemeente Rotterdam)</Description>
 							<TransportMode>bus</TransportMode>
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:MRDH" version="any"/>
@@ -506,7 +507,7 @@
 						<Network id="DOVA:Network:WTL" version="any">
 							<Name>Waterland</Name>
 							<ShortName>WTL</ShortName>
-							<Description>Waterland</Description>
+							<Description>Het netwerk van buslijnen door het gebied van de 7 gemeenten in de regio Waterland met uitlopers naar Amsterdam, Hoorn, De Rijp en Wormerveer</Description>
 							<TransportMode>bus</TransportMode>
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:VRA" version="any"/>
@@ -518,7 +519,7 @@
 						<Network id="DOVA:Network:ZAAN" version="any">
 							<Name>Zaanstreek</Name>
 							<ShortName>ZAAN</ShortName>
-							<Description>Zaanstreek</Description>
+							<Description>Het netwerk van buslijnen door het gebied van de gemeenten Zaanstad en Oostzaan</Description>
 							<TransportMode>bus</TransportMode>
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:VRA" version="any"/>
