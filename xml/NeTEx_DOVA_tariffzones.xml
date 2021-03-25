@@ -6,22 +6,23 @@
 <!-- Historie:                                                                         -->
 <!--   v20201218  (dec.2020)  initiële (concept)versie                                 -->
 <!--   v20210128  (jan.2021)  eerste volledige versie                                  -->
+<!--   v20210325  (mrt.2021)  aangepast voor NL NeTEx Profiel v9.2.1                   -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <PublicationDelivery xmlns="http://www.netex.org.uk/netex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.netex.org.uk/netex https://github.com/BISONNL/NeTEx-NL/raw/master/xsd/netex-nl-geen-constraints.xsd" version="ntx:1.1">
-	<PublicationTimestamp>2021-01-28T00:00:00Z</PublicationTimestamp>
+	<PublicationTimestamp>2021-03-25T17:30:00Z</PublicationTimestamp>
 	<ParticipantRef>BISON</ParticipantRef>
 	<Description>Export van de door DOVA voorgedefinieerde gegevens t.b.v. het NL NeTEx Profiel.</Description>
 	<dataObjects>
-		<CompositeFrame id="DOVA:CompositeFrame:PredefinedTariffZones" version="20210128">
+		<CompositeFrame id="DOVA:CompositeFrame:PredefinedTariffZones" version="20210325">
 			<Description>De door DOVA 'centraal' bijgehouden lijst met OV-zones. Desgewenst kan men de relevante lijstelementen ongewijzigd(!) overnemen in een gegevenslevering conform het NL dienstregeling Profiel.</Description>
-			<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_DOVA_LISTS" version="9.2.0"/>
+			<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_DOVA_LISTS" version="9.2.1"/>
 			<FrameDefaults>
 				<DefaultCodespaceRef ref="BISON:Codespace:DOVA"/>
 			</FrameDefaults>
 			<frames>
-				<GeneralFrame id="DOVA:GeneralFrame:OvZones" version="20210128">
+				<GeneralFrame id="DOVA:GeneralFrame:OvZones" version="20210325">
 					<Description>Lijst met voorgedefinieerde identificaties van OV-zones.</Description>
-					<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_TariffZoneList" version="9.2.0"/>
+					<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_TariffZoneList" version="9.2.1"/>
 					<members>
 						<TariffZone id="DOVA:TariffZone:1000" version="any"><Name>zone 1000</Name><ShortName>1000</ShortName><Description>Groningen</Description></TariffZone>
 						<TariffZone id="DOVA:TariffZone:1010" version="any"><Name>zone 1010</Name><ShortName>1010</ShortName><Description>Lewenborg</Description></TariffZone>
