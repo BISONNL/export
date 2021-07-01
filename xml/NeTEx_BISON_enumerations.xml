@@ -192,6 +192,10 @@
 									<Name>VehicleSchedule frame</Name>
 									<Description>VehicleSchedule frame (NL dienstregeling Profiel)</Description>
 								</TypeOfFrame>
+								<TypeOfFrame id="BISON:TypeOfFrame:NL_TT_SITE" version="9.2.3">
+									<Name>Site frame</Name>
+									<Description>Site frame (NL dienstregeling Profiel)</Description>
+								</TypeOfFrame>
 								<!-- Voor het NL centraal Profiel       -->
 								<TypeOfFrame id="BISON:TypeOfFrame:NL_CODESPACES" version="9.2.3">
 									<Name>Codespace composite frame</Name>
