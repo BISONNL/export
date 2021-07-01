@@ -7,23 +7,24 @@
 <!--   v20201218  (dec.2020)  initiële (concept)versie                                 -->
 <!--   v20210128  (jan.2021)  eerste volledige versie                                  -->
 <!--   v20210305  (mrt.2021)  diverse Name, Description en status bijgewerkt           -->
-<!--   v20210325  (mrt.2021)  aangepast voor NL NeTEx Profiel v9.2.1                   -->
+<!--   v20210325  (mrt.2021)  versienummer NL NeTEx Profiel naar v9.2.1                -->
+<!--   v20210701  (jul.2021)  versienummer NL NeTEx Profiel naar v9.2.3                -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <PublicationDelivery xmlns="http://www.netex.org.uk/netex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.netex.org.uk/netex https://github.com/BISONNL/NeTEx-NL/raw/master/xsd/netex-nl-geen-constraints.xsd" version="ntx:1.1">
-	<PublicationTimestamp>2021-03-25T17:30:00Z</PublicationTimestamp>
+	<PublicationTimestamp>2021-07-01T11:30:00Z</PublicationTimestamp>
 	<ParticipantRef>BISON</ParticipantRef>
 	<Description>Export van de door DOVA voorgedefinieerde gegevens t.b.v. het NL NeTEx Profiel.</Description>
 	<dataObjects>
-		<CompositeFrame id="DOVA:CompositeFrame:PredefinedNetworks" version="20210325">
+		<CompositeFrame id="DOVA:CompositeFrame:PredefinedNetworks" version="20210701">
 			<Description>De door DOVA 'centraal' bijgehouden lijst met concessies. Desgewenst kan men de relevante lijstelementen ongewijzigd(!) overnemen in een gegevenslevering conform het NL dienstregeling Profiel.</Description>
-			<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_DOVA_LISTS" version="9.2.1"/>
+			<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_DOVA_LISTS" version="9.2.3"/>
 			<FrameDefaults>
 				<DefaultCodespaceRef ref="BISON:Codespace:DOVA"/>
 			</FrameDefaults>
 			<frames>
-				<GeneralFrame id="DOVA:GeneralFrame:Concessies" version="20210325">
+				<GeneralFrame id="DOVA:GeneralFrame:Concessies" version="20210701">
 					<Description>Lijst met voorgedefinieerde identificaties van concessies. Voor elke concessie is naast het eigenlijke element (Network) ook een ondersteunend element (TransportAdministrativeZone) gedefinieerd t.b.v. verwijzingen vanuit een ResponsibilitySet.</Description>
-					<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_NetworkList" version="9.2.1"/>
+					<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_NetworkList" version="9.2.3"/>
 					<members>
 						<Network id="DOVA:Network:ACH-RIV" version="any">
 							<Name>Achterhoek Rivierenland</Name>
