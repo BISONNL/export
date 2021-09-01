@@ -334,7 +334,7 @@
 							<GroupOfLinesType>administrative</GroupOfLinesType>
 							<AuthorityRef ref="DOVA:Authority:PNH" version="any"/>
 						</Network>
-						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:HNH" version="any">
+						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:NHN" version="any">
 							<Name>Noord-Holland Noord</Name>
 							<ShortName>NHN</ShortName>
 						</TransportAdministrativeZone>
