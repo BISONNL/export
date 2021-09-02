@@ -2,8 +2,8 @@
 
 *ten behoeve van het NL NeTEx Profiel en het NL SIRI Profiel*
 
-De (actuele en eerdere) versies zijn terug te vinden onder [releases](http://github.com/BISONNL/export/releases).
-De actuele versie staat ook in de [submap xml](http://github.com/BISONNL/export/tree/master/xml).
+De actuele versie (inclusief evt. recente correcties) staat in de [submap xml](http://github.com/BISONNL/export/tree/master/xml).
+Eerdere bevroren versies (van alle exportbestanden samen) zijn terug te vinden onder [releases](http://github.com/BISONNL/export/releases).
 
 De documentatie is te vinden op de [BISON website](http://bison.dova.nu/standaarden/export).
 
