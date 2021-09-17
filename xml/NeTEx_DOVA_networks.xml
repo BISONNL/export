@@ -10,20 +10,21 @@
 <!--   v20210325  (mrt.2021)  versienummer NL NeTEx Profiel naar v9.2.1                -->
 <!--   v20210701  (jul.2021)  versienummer NL NeTEx Profiel naar v9.2.3                -->
 <!--   v20210902  (sep.2021)  correctie id van TransportAdministrativeZone NHN         -->
+<!--   v20210917  (sep.2021)  enkele concessies toegevoegd                             -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <PublicationDelivery xmlns="http://www.netex.org.uk/netex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.netex.org.uk/netex https://github.com/BISONNL/NeTEx-NL/raw/master/xsd/netex-nl-geen-constraints.xsd" version="ntx:1.1">
-	<PublicationTimestamp>2021-09-02T10:15:00Z</PublicationTimestamp>
+	<PublicationTimestamp>2021-09-17T14:30:00Z</PublicationTimestamp>
 	<ParticipantRef>BISON</ParticipantRef>
 	<Description>Export van de door DOVA voorgedefinieerde gegevens t.b.v. het NL NeTEx Profiel.</Description>
 	<dataObjects>
-		<CompositeFrame id="DOVA:CompositeFrame:PredefinedNetworks" version="20210902">
+		<CompositeFrame id="DOVA:CompositeFrame:PredefinedNetworks" version="20210917">
 			<Description>De door DOVA 'centraal' bijgehouden lijst met concessies. Desgewenst kan men de relevante lijstelementen ongewijzigd(!) overnemen in een gegevenslevering conform het NL dienstregeling Profiel.</Description>
 			<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_DOVA_LISTS" version="9.2.3"/>
 			<FrameDefaults>
 				<DefaultCodespaceRef ref="BISON:Codespace:DOVA"/>
 			</FrameDefaults>
 			<frames>
-				<GeneralFrame id="DOVA:GeneralFrame:Concessies" version="20210902">
+				<GeneralFrame id="DOVA:GeneralFrame:Concessies" version="20210917">
 					<Description>Lijst met voorgedefinieerde identificaties van concessies. Voor elke concessie is naast het eigenlijke element (Network) ook een ondersteunend element (TransportAdministrativeZone) gedefinieerd t.b.v. verwijzingen vanuit een ResponsibilitySet.</Description>
 					<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_NetworkList" version="9.2.3"/>
 					<members>
@@ -375,6 +376,30 @@
 							<Name>Provincie Utrecht</Name>
 							<ShortName>PUT</ShortName>
 						</TransportAdministrativeZone>
+						<Network id="DOVA:Network:RAIL-NN" version="any">
+							<Name>Regionaal spoorvervoer Fryslân en Groningen</Name>
+							<ShortName>RAIL-NN</ShortName>
+							<Description>Het regionaal spoorvervoer in de provincies Fryslân en Groningen</Description>
+							<TransportMode>rail</TransportMode>
+							<GroupOfLinesType>administrative</GroupOfLinesType>
+							<AuthorityRef ref="DOVA:Authority:GRFRNS" version="any"/>
+						</Network>
+						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:RAIL-NN" version="any">
+							<Name>Regionaal spoorvervoer Fryslân en Groningen</Name>
+							<ShortName>RAIL-NN</ShortName>
+						</TransportAdministrativeZone>
+						<Network id="DOVA:Network:RAIL-VD" version="any">
+							<Name>Vechtdallijnen</Name>
+							<ShortName>RAIL-VD</ShortName>
+							<Description>Lijnconcessie t.b.v. de regionale spoorverbindingen Zwolle - Emmen en Almelo - Mariënberg</Description>
+							<TransportMode>rail</TransportMode>
+							<GroupOfLinesType>administrative</GroupOfLinesType>
+							<AuthorityRef ref="DOVA:Authority:OVSDR" version="any"/>
+						</Network>
+						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:RAIL-VD" version="any">
+							<Name>Vechtdallijnen</Name>
+							<ShortName>RAIL-VD</ShortName>
+						</TransportAdministrativeZone>
 						<Network id="DOVA:Network:RTD-B" version="any">
 							<Name>Bus Rotterdam e.o.</Name>
 							<ShortName>RTD-B</ShortName>
@@ -422,6 +447,18 @@
 						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:SAN" version="any">
 							<Name>Concessie Arnhem Nijmegen</Name>
 							<ShortName>SAN</ShortName>
+						</TransportAdministrativeZone>
+						<Network id="DOVA:Network:SLA" version="any">
+							<Name>Schiphol Landside/Airside</Name>
+							<ShortName>SLA</ShortName>
+							<Description>Pendeldiensten op en rond luchthaven Schiphol, alsmede het platformvervoer op de luchthaven</Description>
+							<TransportMode>bus</TransportMode>
+							<GroupOfLinesType>administrative</GroupOfLinesType>
+							<AuthorityRef ref="DOVA:Authority:SH" version="any"/>
+						</Network>
+						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:SLA" version="any">
+							<Name>Schiphol Landside/Airside</Name>
+							<ShortName>SLA</ShortName>
 						</TransportAdministrativeZone>
 						<Network id="DOVA:Network:SRE" version="any">
 							<Name>Zuidoost-Brabant</Name>
