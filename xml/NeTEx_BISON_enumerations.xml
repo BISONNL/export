@@ -10,20 +10,21 @@
 <!--   v20210128  (jan.2021)  eerste volledige versie                                  -->
 <!--   v20210325  (mrt.2021)  aangepast voor NL NeTEx Profiel v9.2.1                   -->
 <!--   v20210701  (jul.2021)  aangepast voor NL NeTEx Profiel v9.2.2 en v9.2.3         -->
+<!--   v20211123  (nov.2021)  correctie id van TypeOfOrganisation 'Other'              -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <PublicationDelivery xmlns="http://www.netex.org.uk/netex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.netex.org.uk/netex https://github.com/BISONNL/NeTEx-NL/raw/master/xsd/netex-nl-geen-constraints.xsd" version="ntx:1.1">
-	<PublicationTimestamp>2021-07-01T11:30:00Z</PublicationTimestamp>
+	<PublicationTimestamp>2021-11-23T14:30:00Z</PublicationTimestamp>
 	<ParticipantRef>BISON</ParticipantRef>
 	<Description>Export van de door BISON voorgedefinieerde gegevens t.b.v. het NL NeTEx Profiel.</Description>
 	<dataObjects>
-		<CompositeFrame id="BISON:CompositeFrame:PredefinedEnumerations" version="20210701">
+		<CompositeFrame id="BISON:CompositeFrame:PredefinedEnumerations" version="20211123">
 			<Description>De door BISON vastgestelde standaardenumeraties. Deze enumeraties worden bijgehouden door BISON. Desgewenst kan men de relevante ValueSet(s) ongewijzigd(!) overnemen in een gegevenslevering conform het NL dienstregeling Profiel.</Description>
 			<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_BISON_ENUMS" version="9.2.3"/>
 			<FrameDefaults>
 				<DefaultCodespaceRef ref="BISON:Codespace:BISON"/>
 			</FrameDefaults>
 			<frames>
-				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfEquipment" version="20210701">
+				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfEquipment" version="20211123">
 					<Description>Standaardenumeratie met voorgedefinieerde soorten apparatuur m.b.t. toegankelijkheid. </Description>
 					<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_TypeOfEquipmentValues" version="9.2.3"/>
 					<members>
@@ -50,7 +51,7 @@
 						</ValueSet>
 					</members>
 				</GeneralFrame>
-				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfActivation" version="20210701">
+				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfActivation" version="20211123">
 					<Description>Standaardenumeratie met voorgedefinieerde KAR-meldpunt typen.</Description>
 					<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_TypeOfActivationValues" version="9.2.3"/>
 					<members>
@@ -76,7 +77,7 @@
 						</ValueSet>
 					</members>
 				</GeneralFrame>
-				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfService" version="20210701">
+				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfService" version="20211123">
 					<Description>Standaardenumeratie met voorgedefinieerde formules (lijnkenmerken).</Description>
 					<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_TypeOfServiceValues" version="9.2.3"/>
 					<members>
@@ -95,7 +96,7 @@
 						</ValueSet>
 					</members>
 				</GeneralFrame>
-				<GeneralFrame id="BISON:GeneralFrame:Predefined_Technical" version="20210701">
+				<GeneralFrame id="BISON:GeneralFrame:Predefined_Technical" version="20211123">
 					<Description>Diverse technische standaardenumeraties t.b.v. het NL NeTEx Profiel.</Description>
 					<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_TechnicalEnumerations" version="9.2.3"/>
 					<members>
@@ -120,14 +121,14 @@
 								</TypeOfEntity>
 							</values>
 						</ValueSet>
-						<ValueSet id="BISON:ValueSet:TypeOfOrganisation" version="20210701">
+						<ValueSet id="BISON:ValueSet:TypeOfOrganisation" version="20211123">
 							<Description>Standaardenumeratie voor soorten organisaties (die niet in NeTEx zelf zijn gedefinieerd).</Description>
 							<values>
 								<TypeOfOrganisation id="BISON:TypeOfOrganisation:Financer" version="any">
 									<Name>Financer</Name>
 									<Description>Financier van het OV</Description>
 								</TypeOfOrganisation>
-								<TypeOfOrganisation id="BISON:TypeOfResponsibilityRole:Other" version="any">
+								<TypeOfOrganisation id="BISON:TypeOfOrganisation:Other" version="any">
 									<Name>Other</Name>
 									<Description>Een ander type organisatie</Description>
 								</TypeOfOrganisation>
