@@ -13,11 +13,11 @@
 <!--   v20210701  (jul.2021)  versienummer NL NeTEx Profiel naar v9.2.3                -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <PublicationDelivery xmlns="http://www.netex.org.uk/netex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.netex.org.uk/netex https://github.com/BISONNL/NeTEx-NL/raw/master/xsd/netex-nl-geen-constraints.xsd" version="ntx:1.1">
-	<PublicationTimestamp>2021-07-01T11:30:00Z</PublicationTimestamp>
+	<PublicationTimestamp>2021-12-08T16:00:00Z</PublicationTimestamp>
 	<ParticipantRef>BISON</ParticipantRef>
 	<Description>Export van de door BISON voorgedefinieerde gegevens t.b.v. het NL NeTEx Profiel.</Description>
 	<dataObjects>
-		<CompositeFrame id="BISON:CompositeFrame:PredefinedCodespaces" version="20210701">
+		<CompositeFrame id="BISON:CompositeFrame:PredefinedCodespaces" version="20211208">
 			<Description>De door BISON vastgestelde domeinen. Desgewenst kan men de relevante Codespaces ongewijzigd(!) overnemen in een gegevenslevering conform het NL dienstregeling Profiel. Aanvraag van nieuwe domeinen gaat via het reguliere BISON wijzigingstraject!</Description>
 			<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_CODESPACES" version="9.2.3"/>
 			<codespaces>
@@ -230,6 +230,11 @@
 					<Xmlns>NWL</Xmlns>
 					<XmlnsUrl>http://bison.dova.nu/ns/NWL</XmlnsUrl>
 					<Description>Zweckverband Nahverkehr Westfalen-Lippe</Description>
+				</Codespace>
+				<Codespace id="BISON:Codespace:NLALERT">
+					<Xmlns>NLALERT</Xmlns>
+					<XmlnsUrl>http://bison.dova.nu/ns/NLALERT</XmlnsUrl>
+					<Description>NL-Alert (noodsituaties)</Description>
 				</Codespace>
 				<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 				<!-- Vooralsnog niet opgenomen in deze lijst: wegbeheerders, RWS diensten, overheidslagen  -->
