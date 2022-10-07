@@ -11,6 +11,7 @@
 <!--   v20210701  (jul.2021)  versienummer NL NeTEx Profiel naar v9.2.3                -->
 <!--   v20210902  (sep.2021)  correctie id van TransportAdministrativeZone NHN         -->
 <!--   v20210917  (sep.2021)  enkele concessies toegevoegd                             -->
+<!--   v20220922  (sep.2022)  concessies VZ, IJV en ZW toegevoegd                             -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <PublicationDelivery xmlns="http://www.netex.org.uk/netex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.netex.org.uk/netex https://github.com/BISONNL/NeTEx-NL/raw/master/xsd/netex-nl-geen-constraints.xsd" version="ntx:1.1">
 	<PublicationTimestamp>2021-09-17T14:30:00Z</PublicationTimestamp>
@@ -160,6 +161,18 @@
 							<Name>Fast Ferry Vlissingen-Breskens</Name>
 							<ShortName>FFVB</ShortName>
 						</TransportAdministrativeZone>
+						<Network id="DOVA:Network:FY" version="any">
+							<Name>Fryslân</Name>
+							<ShortName>FY</ShortName>
+							<Description>Noodconcessie Fryslân</Description>
+							<TransportMode>bus</TransportMode>
+							<GroupOfLinesType>administrative</GroupOfLinesType>
+							<AuthorityRef ref="DOVA:Authority:FR" version="any"/>
+						</Network>
+						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:FY" version="any">
+							<Name>Fryslân</Name>
+							<ShortName>FY</ShortName>
+						</TransportAdministrativeZone>		
 						<Network id="DOVA:Network:GD" version="any">
 							<Name>GD-concessie</Name>
 							<ShortName>GD</ShortName>
@@ -291,6 +304,18 @@
 						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:IJSV" version="any">
 							<Name>Noodconcessie IJssel-Vecht</Name>
 							<ShortName>IJSV</ShortName>
+						</TransportAdministrativeZone>
+						<Network id="DOVA:Network:IJV" version="any">
+							<Name>IJssel-Vecht</Name>
+							<ShortName>IJV</ShortName>
+							<Description>IJssel - Vecht</Description>
+							<TransportMode>bus</TransportMode>
+							<GroupOfLinesType>administrative</GroupOfLinesType>
+							<AuthorityRef ref="DOVA:Authority:OVOOST" version="any"/>
+						</Network>
+						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:IJV" version="any">
+							<Name>IJssel-Vecht</Name>
+							<ShortName>IJV</ShortName>
 						</TransportAdministrativeZone>
 						<Network id="DOVA:Network:LLS" version="any">
 							<Name>Stadsvervoer Lelystad</Name>
@@ -520,7 +545,19 @@
 							<Name>Veluwe</Name>
 							<ShortName>VE</ShortName>
 						</TransportAdministrativeZone>
-						<Network id="DOVA:Network:VPR" version="any">
+						<Network id="DOVA:Network:VZ" version="any">
+							<Name>Veluwe Zuid</Name>
+							<ShortName>VZ</ShortName>
+							<Description>Veluwe Zuid</Description>
+							<TransportMode>bus</TransportMode>
+							<GroupOfLinesType>administrative</GroupOfLinesType>
+							<AuthorityRef ref="DOVA:Authority:GLD" version="any"/>
+						</Network>
+						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:VZ" version="any">
+							<Name>Veluwe Zuid</Name>
+							<ShortName>VZ</ShortName>
+						</TransportAdministrativeZone>
+							<Network id="DOVA:Network:VPR" version="any">
 							<Name>Voorne-Putten en Rozenburg</Name>
 							<ShortName>VPR</ShortName>
 							<Description>Busvervoer in Nissewaard, Brielle, Hellevoetsluis, Westvoorne en de kern Rozenburg (gemeente Rotterdam)</Description>
@@ -603,6 +640,18 @@
 						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:ZOF" version="any">
 							<Name>Zuidoost Fryslân, Vlieland, Terschelling, Ameland</Name>
 							<ShortName>ZOF</ShortName>
+						</TransportAdministrativeZone>
+						<Network id="DOVA:Network:ZW" version="any">
+							<Name>Zaanstreek Waterland</Name>
+							<ShortName>ZW</ShortName>
+							<Description>Zaanstreek Waterland</Description>
+							<TransportMode>bus</TransportMode>
+							<GroupOfLinesType>administrative</GroupOfLinesType>
+							<AuthorityRef ref="DOVA:Authority:VRA" version="any"/>
+						</Network>
+						<TransportAdministrativeZone id="DOVA:TransportAdministrativeZone:ZW" version="any">
+							<Name>Zaanstreek Waterland</Name>
+							<ShortName>ZW</ShortName>
 						</TransportAdministrativeZone>
 					</members>
 				</GeneralFrame>
