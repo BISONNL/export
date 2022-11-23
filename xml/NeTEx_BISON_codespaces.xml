@@ -11,15 +11,16 @@
 <!--   v20210305  (mrt.2021)  NWL toegevoegd                                           -->
 <!--   v20210325  (mrt.2021)  versienummer NL NeTEx Profiel naar v9.2.1                -->
 <!--   v20210701  (jul.2021)  versienummer NL NeTEx Profiel naar v9.2.3                -->
+<!--   v20221202  (dec.2022)  versienummer NL NeTEx Profiel naar v9.2.4                -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <PublicationDelivery xmlns="http://www.netex.org.uk/netex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.netex.org.uk/netex https://github.com/BISONNL/NeTEx-NL/raw/master/xsd/netex-nl-geen-constraints.xsd" version="ntx:1.1">
 	<PublicationTimestamp>2022-02-11T12:00:00Z</PublicationTimestamp>
 	<ParticipantRef>BISON</ParticipantRef>
 	<Description>Export van de door BISON voorgedefinieerde gegevens t.b.v. het NL NeTEx Profiel.</Description>
 	<dataObjects>
-		<CompositeFrame id="BISON:CompositeFrame:PredefinedCodespaces" version="20220211">
+		<CompositeFrame id="BISON:CompositeFrame:PredefinedCodespaces" version="20221202">
 			<Description>De door BISON vastgestelde domeinen. Desgewenst kan men de relevante Codespaces ongewijzigd(!) overnemen in een gegevenslevering conform het NL dienstregeling Profiel. Aanvraag van nieuwe domeinen gaat via het reguliere BISON wijzigingstraject!</Description>
-			<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_CODESPACES" version="9.2.3"/>
+			<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_CODESPACES" version="9.2.4"/>
 			<codespaces>
 				<Codespace id="BISON:Codespace:EPSG">
 					<Xmlns>EPSG</Xmlns>
@@ -245,6 +246,11 @@
 					<Xmlns>LEVELINK</Xmlns>
 					<XmlnsUrl>http://bison.dova.nu/ns/LEVELINK</XmlnsUrl>
 					<Description>Hermann Levelink, Omnibusverkehr GmbH &amp; Co. KG</Description>
+				</Codespace>
+				<Codespace id="BISON:Codespace:DCRI">
+					<Xmlns>DCRI</Xmlns>
+					<XmlnsUrl>http://bison.dova.nu/ns/DCRI</XmlnsUrl>
+					<Description>Diensten Centrum Reisinformatie - levert dienstregeling voor spoorvervoerders</Description>
 				</Codespace>
 				<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 				<!-- Vooralsnog niet opgenomen in deze lijst: wegbeheerders, RWS diensten, overheidslagen  -->
