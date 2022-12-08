@@ -20,7 +20,7 @@
 	<dataObjects>
 		<CompositeFrame id="BISON:CompositeFrame:PredefinedEnumerations" version="20221202">
 			<Description>De door BISON vastgestelde standaardenumeraties. Deze enumeraties worden bijgehouden door BISON. Desgewenst kan men de relevante ValueSet(s) ongewijzigd(!) overnemen in een gegevenslevering conform het NL dienstregeling Profiel.</Description>
-			<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_BISON_ENUMS" version="9.2.3"/>
+			<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_BISON_ENUMS" version="9.2.4"/>
 			<FrameDefaults>
 				<DefaultCodespaceRef ref="BISON:Codespace:BISON"/>
 			</FrameDefaults>
@@ -31,19 +31,19 @@
 					<members>
 						<ValueSet id="BISON:ValueSet:TypeOfEquipment" version="20210128">
 							<values>
-								<TypeOfEquipment id="BISON:TypeOfEquipment:automaticRamp" version="any">
+								<TypeOfEquipment id="BISON:TypeOfEquipment:automaticRamp" version="1">
 									<Name>automaticRamp</Name>
 									<Description>Elektrische oprijplaat</Description>
 								</TypeOfEquipment>
-								<TypeOfEquipment id="BISON:TypeOfEquipment:manualRamp" version="any">
+								<TypeOfEquipment id="BISON:TypeOfEquipment:manualRamp" version="1">
 									<Name>manualRamp</Name>
 									<Description>Handbediende oprijplaat</Description>
 								</TypeOfEquipment>
-								<TypeOfEquipment id="BISON:TypeOfEquipment:slidingStep" version="any">
+								<TypeOfEquipment id="BISON:TypeOfEquipment:slidingStep" version="1">
 									<Name>slidingStep</Name>
 									<Description>Opstaptrede</Description>
 								</TypeOfEquipment>
-								<TypeOfEquipment id="BISON:TypeOfEquipment:wheelchairLift" version="any">
+								<TypeOfEquipment id="BISON:TypeOfEquipment:wheelchairLift" version="1">
 									<Name>wheelchairLift</Name>
 									<Description>Rolstoellift</Description>
 								</TypeOfEquipment>
@@ -58,19 +58,19 @@
 					<members>
 						<ValueSet id="BISON:ValueSet:TypeOfActivation" version="20210128">
 							<values>
-								<TypeOfActivation id="BISON:TypeOfActivation:PreAnnouncement" version="any">
+								<TypeOfActivation id="BISON:TypeOfActivation:PreAnnouncement" version="1">
 									<Name>PreAnnouncement</Name>
 									<Description>Vooraanmelding</Description>
 								</TypeOfActivation>
-								<TypeOfActivation id="BISON:TypeOfActivation:Announcement" version="any">
+								<TypeOfActivation id="BISON:TypeOfActivation:Announcement" version="1">
 									<Name>Announcement</Name>
 									<Description>Aanmelding</Description>
 								</TypeOfActivation>
-								<TypeOfActivation id="BISON:TypeOfActivation:HaltLine" version="any">
+								<TypeOfActivation id="BISON:TypeOfActivation:HaltLine" version="1">
 									<Name>HaltLine</Name>
 									<Description>Stopstreep</Description>
 								</TypeOfActivation>
-								<TypeOfActivation id="BISON:TypeOfActivation:LeaveMessage" version="any">
+								<TypeOfActivation id="BISON:TypeOfActivation:LeaveMessage" version="1">
 									<Name>LeaveMessage</Name>
 									<Description>Uitmelding</Description>
 								</TypeOfActivation>
@@ -84,11 +84,11 @@
 					<members>
 						<ValueSet id="BISON:ValueSet:TypeOfService" version="20210128">
 							<values>
-								<TypeOfService id="BISON:TypeOfService:Standaard" version="any">
+								<TypeOfService id="BISON:TypeOfService:Standaard" version="1">
 									<Name>Standaard</Name>
 									<Description>Regulier (openbaar) vervoer</Description>
 								</TypeOfService>
-								<TypeOfService id="BISON:TypeOfService:Flex" version="any">
+								<TypeOfService id="BISON:TypeOfService:Flex" version="1">
 									<Name>Flex</Name>
 									<Description>Flexibel (openbaar) vervoer</Description>
 								</TypeOfService>
@@ -104,19 +104,19 @@
 						<ValueSet id="BISON:ValueSet:DisplayTextLength" version="20210701">
 							<Description>Standaardenumeratie voor de maximale tekstlengte van een (halte)display.</Description>
 							<values>
-								<TypeOfEntity id="BISON:DisplayTextLength:16" version="any">
+								<TypeOfEntity id="BISON:DisplayTextLength:16" version="1">
 									<Name>Tekstlengte 16</Name>
 									<Description>Maximale tekstlengte is 16 karakters</Description>
 								</TypeOfEntity>
-								<TypeOfEntity id="BISON:DisplayTextLength:19" version="any">
+								<TypeOfEntity id="BISON:DisplayTextLength:19" version="1">
 									<Name>Tekstlengte 19</Name>
 									<Description>Maximale tekstlengte is 19 karakters</Description>
 								</TypeOfEntity>
-								<TypeOfEntity id="BISON:DisplayTextLength:21" version="any">
+								<TypeOfEntity id="BISON:DisplayTextLength:21" version="1">
 									<Name>Tekstlengte 21</Name>
 									<Description>Maximale tekstlengte is 21 karakters</Description>
 								</TypeOfEntity>
-								<TypeOfEntity id="BISON:DisplayTextLength:24" version="any">
+								<TypeOfEntity id="BISON:DisplayTextLength:24" version="1">
 									<Name>Tekstlengte 24</Name>
 									<Description>Maximale tekstlengte is 24 karakters</Description>
 								</TypeOfEntity>
@@ -125,21 +125,22 @@
 						<ValueSet id="BISON:ValueSet:TypeOfResponsibilityRole" version="20210701">
 							<Description>Standaardenumeratie voor de rollen in ResponsibilitySets in het NL NeTEx Profiel.</Description>
 							<values>
-								<TypeOfResponsibilityRole id="BISON:TypeOfResponsibilityRole:financing" version="any">
+								<TypeOfResponsibilityRole id="BISON:TypeOfResponsibilityRole:financing" version="1">
 									<Name>Financing</Name>
 									<Description>Financieren van het OV</Description>
 								</TypeOfResponsibilityRole>
 <!--
-								<TypeOfResponsibilityRole id="BISON:TypeOfResponsibilityRole:partition" version="any">
+								<TypeOfResponsibilityRole id="BISON:TypeOfResponsibilityRole:partition" version="1">
 									<Name>Partition</Name>
 									<Description>Partitie van de gegevenslevering</Description>
 								</TypeOfResponsibilityRole>
-								<TypeOfResponsibilityRole id="BISON:TypeOfResponsibilityRole:network" version="any">
+
+								<TypeOfResponsibilityRole id="BISON:TypeOfResponsibilityRole:network" version="1">
 									<Name>Network</Name>
 									<Description>OV-concessie</Description>
 								</TypeOfResponsibilityRole>
 -->
-								<TypeOfResponsibilityRole id="BISON:TypeOfResponsibilityRole:other" version="any">
+								<TypeOfResponsibilityRole id="BISON:TypeOfResponsibilityRole:other" version="1">
 									<Name>Other</Name>
 									<Description>Een andere rol/verantwoordelijkheid</Description>
 								</TypeOfResponsibilityRole>
