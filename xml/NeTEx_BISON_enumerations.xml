@@ -12,7 +12,7 @@
 <!--   v20210701  (jul.2021)  aangepast voor NL NeTEx Profiel v9.2.2 en v9.2.3         -->
 <!--   v20211123  (nov.2021)  correctie id van TypeOfOrganisation 'Other'              -->
 <!--   v20221202  (dec.2022)  versienummer NL NeTEx Profiel naar v9.2.4                -->
-<!--   v20250128  (dec.2022)  versienummer NL NeTEx Profiel naar v9.3.0                -->
+<!--   v20250128  (jan.2025)  versienummer NL NeTEx Profiel naar v9.3.0                -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <PublicationDelivery xmlns="http://www.netex.org.uk/netex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.netex.org.uk/netex https://github.com/BISONNL/NeTEx-NL/raw/master/xsd/netex-nl-geen-constraints.xsd" version="ntx:1.1">
 	<PublicationTimestamp>2021-11-23T14:30:00Z</PublicationTimestamp>
