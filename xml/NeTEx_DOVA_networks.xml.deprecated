@@ -1,0 +1,17 @@
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Copyright:                                                                        -->
+<!--     Dit document is eigendom van Platform BISON onder Samenwerkingsverband DOVA   -->
+<!--                                                                                   -->
+<!-- Historie:                                                                         -->
+<!--   v20201218  (dec.2020)  initiële (concept)versie                                 -->
+<!--   v20210128  (jan.2021)  eerste volledige versie                                  -->
+<!--   v20210305  (mrt.2021)  diverse Name, Description en status bijgewerkt           -->
+<!--   v20210325  (mrt.2021)  versienummer NL NeTEx Profiel naar v9.2.1                -->
+<!--   v20210701  (jul.2021)  versienummer NL NeTEx Profiel naar v9.2.3                -->
+<!--   v20210902  (sep.2021)  correctie id van TransportAdministrativeZone NHN         -->
+<!--   v20210917  (sep.2021)  enkele concessies toegevoegd                             -->
+<!--   v20220922  (sep.2022)  concessies VZ, IJV en ZW toegevoegd                      -->
+<!--   v20221202  (dec.2022)  versienummer NL NeTEx Profiel naar v9.2.4                -->
+<!--   v20250128  (jan.2025)  NeTEx_DOVA_networks.xml verwijderd voor v9.3.0           -->
+<!--                          Voor de info in deze file, zie de NDOV-loketten          -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
