@@ -1,18 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <!-- Copyright:                                                                        -->
 <!--     Dit document is eigendom van Platform BISON onder Samenwerkingsverband DOVA   -->
-<!--     en wordt gepubliceerd onder de Creative Commons Licentie by-nd/3.0/nl,        -->
-<!--     zie http://creativecommons.org/licences/by-nd/3.0/nl                          -->
 <!--                                                                                   -->
 <!-- Historie:                                                                         -->
 <!--   v20201218  (dec.2020)  initiële (concept)versie                                 -->
 <!--   v20210128  (jan.2021)  eerste volledige versie                                  -->
-<!--   v20210305  (mrt.2021)  NWL toegevoegd                                           -->
 <!--   v20210325  (mrt.2021)  versienummer NL NeTEx Profiel naar v9.2.1                -->
 <!--   v20210701  (jul.2021)  versienummer NL NeTEx Profiel naar v9.2.3                -->
 <!--   v20221202  (dec.2022)  versienummer NL NeTEx Profiel naar v9.2.4                -->
-<!--   v20250128  (jan.2025)  NeTEx_DOVA_codespaces.xml verwijderd voor v9.3.0         -->
+<!--   v20250128  (jan.2025)  NeTEx_DOVA_tariffzones.xml verwijderd voor v9.3.0        -->
 <!--                          Voor de info in deze file, zie de NDOV-loketten          -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-<deprecated/>
