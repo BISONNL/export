@@ -719,6 +719,122 @@
 						</ValueSet>
 					</members>
 				</GeneralFrame>
+
+				<!-- Hieronder enkele oude elementen die enkel zijn opgenomen voor de migratieperiode naar versie 9.3.0 van het Nederlands NeTEx Profiel -->
+				<!-- Deze elementen worden verwijderd uit deze export, één jaar na de definitieve goedkeuring van versie 9.3.0 -->
+
+				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfEquipment" version="20250128">
+					<Description>Standaardenumeratie met voorgedefinieerde soorten apparatuur m.b.t. toegankelijkheid. </Description>
+					<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_TypeOfEquipmentValues" version="9.3.0"/>
+					<members>
+						<ValueSet id="BISON:ValueSet:TypeOfEquipment" version="20210128">
+							<values>
+								<TypeOfEquipment id="BISON:TypeOfEquipment:automaticRamp" version="1">
+									<Name>automaticRamp</Name>
+									<Description>Elektrische oprijplaat</Description>
+								</TypeOfEquipment>
+								<TypeOfEquipment id="BISON:TypeOfEquipment:manualRamp" version="1">
+									<Name>manualRamp</Name>
+									<Description>Handbediende oprijplaat</Description>
+								</TypeOfEquipment>
+								<TypeOfEquipment id="BISON:TypeOfEquipment:slidingStep" version="1">
+									<Name>slidingStep</Name>
+									<Description>Opstaptrede</Description>
+								</TypeOfEquipment>
+								<TypeOfEquipment id="BISON:TypeOfEquipment:wheelchairLift" version="1">
+									<Name>wheelchairLift</Name>
+									<Description>Rolstoellift</Description>
+								</TypeOfEquipment>
+								<!-- WELLICHT NOG AANVULLEN -->
+							</values>
+						</ValueSet>
+					</members>
+				</GeneralFrame>
+				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfActivation" version="20250128">
+					<Description>Standaardenumeratie met voorgedefinieerde KAR-meldpunt typen.</Description>
+					<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_TypeOfActivationValues" version="9.3.0"/>
+					<members>
+						<ValueSet id="BISON:ValueSet:TypeOfActivation" version="20210128">
+							<values>
+								<TypeOfActivation id="BISON:TypeOfActivation:PreAnnouncement" version="1">
+									<Name>PreAnnouncement</Name>
+									<Description>Vooraanmelding</Description>
+								</TypeOfActivation>
+								<TypeOfActivation id="BISON:TypeOfActivation:Announcement" version="1">
+									<Name>Announcement</Name>
+									<Description>Aanmelding</Description>
+								</TypeOfActivation>
+								<TypeOfActivation id="BISON:TypeOfActivation:HaltLine" version="1">
+									<Name>HaltLine</Name>
+									<Description>Stopstreep</Description>
+								</TypeOfActivation>
+								<TypeOfActivation id="BISON:TypeOfActivation:LeaveMessage" version="1">
+									<Name>LeaveMessage</Name>
+									<Description>Uitmelding</Description>
+								</TypeOfActivation>
+							</values>
+						</ValueSet>
+					</members>
+				</GeneralFrame>
+				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfService" version="20250128">
+					<Description>Standaardenumeratie met voorgedefinieerde formules (lijnkenmerken).</Description>
+					<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_TypeOfServiceValues" version="9.3.0"/>
+					<members>
+						<ValueSet id="BISON:ValueSet:TypeOfService" version="20210128">
+							<values>
+								<TypeOfService id="BISON:TypeOfService:Standaard" version="1">
+									<Name>Standaard</Name>
+									<Description>Regulier (openbaar) vervoer</Description>
+								</TypeOfService>
+								<TypeOfService id="BISON:TypeOfService:Flex" version="1">
+									<Name>Flex</Name>
+									<Description>Flexibel (openbaar) vervoer</Description>
+								</TypeOfService>
+								<!-- NOG VERDER AAN TE VULLEN -->
+							</values>
+						</ValueSet>
+					</members>
+				</GeneralFrame>
+				<GeneralFrame id="BISON:GeneralFrame:Predefined_Technical" version="220221202">
+					<Description>Diverse technische standaardenumeraties t.b.v. het NL NeTEx Profiel.</Description>
+					<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_TechnicalEnumerations" version="9.3.0"/>
+					<members>
+						<ValueSet id="BISON:ValueSet:DisplayTextLength" version="20210701">
+							<Description>Standaardenumeratie voor de maximale tekstlengte van een (halte)display.</Description>
+							<values>
+								<TypeOfEntity id="BISON:DisplayTextLength:16" version="1">
+									<Name>Tekstlengte 16</Name>
+									<Description>Maximale tekstlengte is 16 karakters</Description>
+								</TypeOfEntity>
+								<TypeOfEntity id="BISON:DisplayTextLength:19" version="1">
+									<Name>Tekstlengte 19</Name>
+									<Description>Maximale tekstlengte is 19 karakters</Description>
+								</TypeOfEntity>
+								<TypeOfEntity id="BISON:DisplayTextLength:21" version="1">
+									<Name>Tekstlengte 21</Name>
+									<Description>Maximale tekstlengte is 21 karakters</Description>
+								</TypeOfEntity>
+								<TypeOfEntity id="BISON:DisplayTextLength:24" version="1">
+									<Name>Tekstlengte 24</Name>
+									<Description>Maximale tekstlengte is 24 karakters</Description>
+								</TypeOfEntity>
+							</values>
+						</ValueSet>
+						<ValueSet id="BISON:ValueSet:TypeOfResponsibilityRole" version="20210701">
+							<Description>Standaardenumeratie voor de rollen in ResponsibilitySets in het NL NeTEx Profiel.</Description>
+							<values>
+								<TypeOfResponsibilityRole id="BISON:TypeOfResponsibilityRole:financing" version="1">
+									<Name>Financing</Name>
+									<Description>Financieren van het OV</Description>
+								</TypeOfResponsibilityRole>
+								<TypeOfResponsibilityRole id="BISON:TypeOfResponsibilityRole:other" version="1">
+									<Name>Other</Name>
+									<Description>Een andere rol/verantwoordelijkheid</Description>
+								</TypeOfResponsibilityRole>
+							</values>
+						</ValueSet>
+					</members>
+				</GeneralFrame>
 			</frames>
 		</CompositeFrame>
 	</dataObjects>
