@@ -12,21 +12,21 @@
 <!--   v20210701  (jul.2021)  aangepast voor NL NeTEx Profiel v9.2.2 en v9.2.3         -->
 <!--   v20211123  (nov.2021)  correctie id van TypeOfOrganisation 'Other'              -->
 <!--   v20221202  (dec.2022)  versienummer NL NeTEx Profiel naar v9.2.4                -->
-<!--   v20250128  (jan.2025)  versienummer NL NeTEx Profiel naar v9.3.0                -->
+<!--   v20210701  (jan.2025)  versienummer NL NeTEx Profiel naar v9.3.0                -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <PublicationDelivery xmlns="http://www.netex.org.uk/netex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.netex.org.uk/netex https://github.com/BISONNL/NeTEx-NL/raw/master/xsd/netex-nl-geen-constraints.xsd" version="ntx:1.1">
 	<PublicationTimestamp>2021-11-23T14:30:00Z</PublicationTimestamp>
 	<ParticipantRef>BISON</ParticipantRef>
 	<Description>Export van de door BISON voorgedefinieerde gegevens t.b.v. het NL NeTEx Profiel.</Description>
 	<dataObjects>
-		<CompositeFrame id="NL:BISON:CompositeFrame:PredefinedEnumerations" version="20250128">
+		<CompositeFrame id="NL:BISON:CompositeFrame:PredefinedEnumerations" version="20210701">
 			<Description>De door BISON vastgestelde standaardenumeraties. Deze enumeraties worden bijgehouden door BISON. Desgewenst kan men de relevante ValueSet(s) ongewijzigd(!) overnemen in een gegevenslevering conform het NL dienstregeling Profiel.</Description>
 			<TypeOfFrameRef ref="NL:BISON:TypeOfFrame:NL_BISON_ENUMS" version="9.3.0"/>
 			<FrameDefaults>
 				<DefaultCodespaceRef ref="NL:BISON:Codespace:BISON"/>
 			</FrameDefaults>
 			<frames>
-				<GeneralFrame id="NL:BISON:GeneralFrame:Predefined_TypeOfEquipment" version="20250128">
+				<GeneralFrame id="NL:BISON:GeneralFrame:Predefined_TypeOfEquipment" version="20210701">
 					<Description>Standaardenumeratie met voorgedefinieerde soorten apparatuur m.b.t. toegankelijkheid. </Description>
 					<TypeOfFrameRef ref="NL:BISON:TypeOfFrame:NL_TypeOfEquipmentValues" version="9.3.0"/>
 					<members>
@@ -53,7 +53,7 @@
 						</ValueSet>
 					</members>
 				</GeneralFrame>
-				<GeneralFrame id="NL:BISON:GeneralFrame:Predefined_TypeOfActivation" version="20250128">
+				<GeneralFrame id="NL:BISON:GeneralFrame:Predefined_TypeOfActivation" version="20210701">
 					<Description>Standaardenumeratie met voorgedefinieerde KAR-meldpunt typen.</Description>
 					<TypeOfFrameRef ref="NL:BISON:TypeOfFrame:NL_TypeOfActivationValues" version="9.3.0"/>
 					<members>
@@ -79,7 +79,7 @@
 						</ValueSet>
 					</members>
 				</GeneralFrame>
-				<GeneralFrame id="NL:BISON:GeneralFrame:Predefined_TypeOfService" version="20250128">
+				<GeneralFrame id="NL:BISON:GeneralFrame:Predefined_TypeOfService" version="20210701">
 					<Description>Standaardenumeratie met voorgedefinieerde formules (lijnkenmerken).</Description>
 					<TypeOfFrameRef ref="NL:BISON:TypeOfFrame:NL_TypeOfServiceValues" version="9.3.0"/>
 					<members>
@@ -136,7 +136,7 @@
 								</TypeOfResponsibilityRole>
 							</values>
 						</ValueSet>
-						<ValueSet id="NL:BISON:ValueSet:TypeOfFrame_930" version="20250128">
+						<ValueSet id="NL:BISON:ValueSet:TypeOfFrame_930" version="20210701">
 							<Description>Standaardenumeratie voor de soorten frames in het NL NeTEx Profiel, versie 9.3.0.</Description>
 							<values>
 								<!-- Voor het NL dienstregeling Profiel -->
@@ -237,7 +237,7 @@
 								</TypeOfFrame>
 							</values>
 						</ValueSet>
-						<ValueSet id="NL:BISON:ValueSet:TypeOfFrame_924" version="20250128">
+						<ValueSet id="NL:BISON:ValueSet:TypeOfFrame_924" version="20210701">
 							<Description>Standaardenumeratie voor de soorten frames in het NL NeTEx Profiel, versie 9.2.4.</Description>
 							<values>
 								<!-- Voor het NL dienstregeling Profiel -->
@@ -435,6 +435,10 @@
 								</TypeOfFrame>
 							</values>
 						</ValueSet>
+
+						<!-- Hieronder elementen uit oudere versies van het Nederlands NeTEx profiel, die enkel zijn opgenomen voor de migratieperiode naar versie 9.3.0. -->
+						<!-- Deze elementen worden verwijderd uit deze export, één jaar na de definitieve goedkeuring van versie 9.3.0. -->
+
 						<ValueSet id="BISON:ValueSet:TypeOfFrame_923" version="20210701">
 							<Description>Standaardenumeratie voor de soorten frames in het NL NeTEx Profiel, versie 9.2.3.</Description>
 							<values>
@@ -750,7 +754,7 @@
 						</ValueSet>
 					</members>
 				</GeneralFrame>
-				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfActivation" version="20250128">
+				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfActivation" version="20210701">
 					<Description>Standaardenumeratie met voorgedefinieerde KAR-meldpunt typen.</Description>
 					<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_TypeOfActivationValues" version="9.3.0"/>
 					<members>
@@ -776,7 +780,7 @@
 						</ValueSet>
 					</members>
 				</GeneralFrame>
-				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfService" version="20250128">
+				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfService" version="20210701">
 					<Description>Standaardenumeratie met voorgedefinieerde formules (lijnkenmerken).</Description>
 					<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_TypeOfServiceValues" version="9.3.0"/>
 					<members>
