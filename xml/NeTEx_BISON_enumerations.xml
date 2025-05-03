@@ -547,6 +547,19 @@
 								</TypeOfEntity>
 							</values>
 						</ValueSet>
+						<ValueSet id="BISON:ValueSet:TypeOfOrganisation" version="20211123">
+							<Description>Standaardenumeratie voor soorten organisaties (die niet in NeTEx zelf zijn gedefinieerd).</Description>
+							<values>
+								<TypeOfOrganisation id="BISON:TypeOfOrganisation:Financer" version="any">
+									<Name>Financer</Name>
+									<Description>Financier van het OV</Description>
+								</TypeOfOrganisation>
+								<TypeOfOrganisation id="BISON:TypeOfOrganisation:Other" version="any">
+									<Name>Other</Name>
+									<Description>Een ander type organisatie</Description>
+								</TypeOfOrganisation>
+							</values>
+						</ValueSet>
 						<ValueSet id="BISON:ValueSet:TypeOfResponsibilityRole" version="20210701">
 							<Description>Standaardenumeratie voor de rollen in ResponsibilitySets in het NL NeTEx Profiel.</Description>
 							<values>
