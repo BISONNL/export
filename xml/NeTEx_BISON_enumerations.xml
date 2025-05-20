@@ -22,6 +22,13 @@
 		<CompositeFrame id="NL:BISON:CompositeFrame:PredefinedEnumerations" version="20210701">
 			<Description>De door BISON vastgestelde standaardenumeraties. Deze enumeraties worden bijgehouden door BISON. Desgewenst kan men de relevante ValueSet(s) ongewijzigd(!) overnemen in een gegevenslevering conform het NL dienstregeling Profiel.</Description>
 			<TypeOfFrameRef ref="NL:BISON:TypeOfFrame:NL_BISON_ENUMS" version="9.3.0"/>
+			<codespaces>
+				<Codespace id="NL:BISON:Codespace:BISON">
+                    <Xmlns>NL:BISON</Xmlns>
+                    <XmlnsUrl>http://bison.dova.nu/ns/BISON</XmlnsUrl>
+                    <Description>BISON standaardenumeraties</Description>
+                </Codespace>
+			</codespaces>
 			<FrameDefaults>
 				<DefaultCodespaceRef ref="NL:BISON:Codespace:BISON"/>
 			</FrameDefaults>
@@ -98,12 +105,11 @@
 						</ValueSet>
 					</members>
 				</GeneralFrame>
-				<GeneralFrame id="NL:BISON:GeneralFrame:Predefined_Technical" version="220221202">
-					<Description>Diverse technische standaardenumeraties t.b.v. het NL NeTEx Profiel.</Description>
+				<GeneralFrame id="NL:BISON:GeneralFrame:Predefined_DisplayTextLength" version="220221202">
+					<Description>Standaardenumeratie voor de maximale tekstlengte van een (halte)display.</Description>
 					<TypeOfFrameRef ref="NL:BISON:TypeOfFrame:NL_TechnicalEnumerations" version="9.3.0"/>
 					<members>
 						<ValueSet id="NL:BISON:ValueSet:DisplayTextLength" version="20210701">
-							<Description>Standaardenumeratie voor de maximale tekstlengte van een (halte)display.</Description>
 							<values>
 								<TypeOfEntity id="NL:BISON:DisplayTextLength:16" version="any">
 									<Name>Tekstlengte 16</Name>
@@ -123,8 +129,13 @@
 								</TypeOfEntity>
 							</values>
 						</ValueSet>
+					</members>
+				</GeneralFrame>
+				<GeneralFrame id="NL:BISON:GeneralFrame:Predefined_TypeOfResponsibilityRole" version="220221202">
+					<Description>Standaardenumeratie voor de rollen in ResponsibilitySets in het NL NeTEx Profiel.</Description>
+					<TypeOfFrameRef ref="NL:BISON:TypeOfFrame:NL_TechnicalEnumerations" version="9.3.0"/>
+					<members>
 						<ValueSet id="NL:BISON:ValueSet:TypeOfResponsibilityRole" version="20210701">
-							<Description>Standaardenumeratie voor de rollen in ResponsibilitySets in het NL NeTEx Profiel.</Description>
 							<values>
 								<TypeOfResponsibilityRole id="NL:BISON:TypeOfResponsibilityRole:financing" version="any">
 									<Name>Financing</Name>
@@ -136,8 +147,13 @@
 								</TypeOfResponsibilityRole>
 							</values>
 						</ValueSet>
+					</members>
+				</GeneralFrame>
+				<GeneralFrame id="NL:BISON:GeneralFrame:Predefined_TypeOfFrame_930" version="220221202">
+					<Description>Standaardenumeratie voor de soorten frames in het NL NeTEx Profiel, versie 9.3.0.</Description>
+					<TypeOfFrameRef ref="NL:BISON:TypeOfFrame:NL_TechnicalEnumerations" version="9.3.0"/>
+					<members>
 						<ValueSet id="NL:BISON:ValueSet:TypeOfFrame_930" version="20210701">
-							<Description>Standaardenumeratie voor de soorten frames in het NL NeTEx Profiel, versie 9.3.0.</Description>
 							<values>
 								<!-- Voor het NL dienstregeling Profiel -->
 								<TypeOfFrame id="NL:BISON:TypeOfFrame:NL_TT_BASELINE" version="9.3.0">
@@ -237,8 +253,13 @@
 								</TypeOfFrame>
 							</values>
 						</ValueSet>
+					</members>
+				</GeneralFrame>
+				<GeneralFrame id="NL:BISON:GeneralFrame:Predefined_TypeOfFrame_924" version="220221202">
+					<Description>Standaardenumeratie voor de soorten frames in het NL NeTEx Profiel, versie 9.2.4.</Description>
+					<TypeOfFrameRef ref="NL:BISON:TypeOfFrame:NL_TechnicalEnumerations" version="9.3.0"/>
+					<members>
 						<ValueSet id="NL:BISON:ValueSet:TypeOfFrame_924" version="20210701">
-							<Description>Standaardenumeratie voor de soorten frames in het NL NeTEx Profiel, versie 9.2.4.</Description>
 							<values>
 								<!-- Voor het NL dienstregeling Profiel -->
 								<TypeOfFrame id="NL:BISON:TypeOfFrame:NL_TT_BASELINE" version="9.2.4">
@@ -338,8 +359,13 @@
 								</TypeOfFrame>
 							</values>
 						</ValueSet>
+					</members>
+				</GeneralFrame>
+				<GeneralFrame id="NL:BISON:GeneralFrame:Predefined_TypeOfFrame_922" version="220221202">
+					<Description>Standaardenumeratie voor de soorten frames in het NL NeTEx Profiel, versie 9.2.2.</Description>
+					<TypeOfFrameRef ref="NL:BISON:TypeOfFrame:NL_TechnicalEnumerations" version="9.3.0"/>
+					<members>
 						<ValueSet id="NL:BISON:ValueSet:TypeOfFrame_922" version="20210701">
-							<Description>Standaardenumeratie voor de soorten frames in het NL NeTEx Profiel, versie 9.2.2.</Description>
 							<values>
 								<!-- Voor het NL dienstregeling Profiel -->
 								<TypeOfFrame id="NL:BISON:TypeOfFrame:NL_TT_BASELINE" version="9.2.2">
@@ -446,6 +472,13 @@
 		<CompositeFrame id="BISON:CompositeFrame:PredefinedEnumerations" version="20210701">
 			<Description>De door BISON vastgestelde standaardenumeraties. Deze enumeraties worden bijgehouden door BISON. Desgewenst kan men de relevante ValueSet(s) ongewijzigd(!) overnemen in een gegevenslevering conform het NL dienstregeling Profiel.</Description>
 			<TypeOfFrameRef ref="NL:BISON:TypeOfFrame:NL_BISON_ENUMS" version="9.3.0"/>
+			<codespaces>
+				<Codespace id="BISON:Codespace:BISON">
+                    <Xmlns>BISON</Xmlns>
+                    <XmlnsUrl>http://bison.dova.nu/ns/BISON</XmlnsUrl>
+                    <Description>BISON standaardenumeraties</Description>
+                </Codespace>
+			</codespaces>
 			<FrameDefaults>
 				<DefaultCodespaceRef ref="BISON:Codespace:BISON"/>
 			</FrameDefaults>
@@ -522,12 +555,11 @@
 						</ValueSet>
 					</members>
 				</GeneralFrame>
-				<GeneralFrame id="BISON:GeneralFrame:Predefined_Technical" version="220221202">
-					<Description>Diverse technische standaardenumeraties t.b.v. het NL NeTEx Profiel.</Description>
+				<GeneralFrame id="BISON:GeneralFrame:Predefined_DisplayTextLength" version="220221202">
+					<Description>Standaardenumeratie voor de maximale tekstlengte van een (halte)display.</Description>
 					<TypeOfFrameRef ref="NL:BISON:TypeOfFrame:NL_TechnicalEnumerations" version="9.3.0"/>
 					<members>
 						<ValueSet id="BISON:ValueSet:DisplayTextLength" version="20210701">
-							<Description>Standaardenumeratie voor de maximale tekstlengte van een (halte)display.</Description>
 							<values>
 								<TypeOfEntity id="BISON:DisplayTextLength:16" version="any">
 									<Name>Tekstlengte 16</Name>
@@ -547,8 +579,13 @@
 								</TypeOfEntity>
 							</values>
 						</ValueSet>
+					</members>
+				</GeneralFrame>
+				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfResponsibilityRole" version="220221202">
+					<Description>Standaardenumeratie voor de rollen in ResponsibilitySets in het NL NeTEx Profiel.</Description>
+					<TypeOfFrameRef ref="NL:BISON:TypeOfFrame:NL_TechnicalEnumerations" version="9.3.0"/>
+					<members>
 						<ValueSet id="BISON:ValueSet:TypeOfResponsibilityRole" version="20210701">
-							<Description>Standaardenumeratie voor de rollen in ResponsibilitySets in het NL NeTEx Profiel.</Description>
 							<values>
 								<TypeOfResponsibilityRole id="BISON:TypeOfResponsibilityRole:financing" version="any">
 									<Name>Financing</Name>
@@ -560,8 +597,13 @@
 								</TypeOfResponsibilityRole>
 							</values>
 						</ValueSet>
+					</members>
+				</GeneralFrame>
+				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfFrame_923" version="220221202">
+					<Description>Standaardenumeratie voor de soorten frames in het NL NeTEx Profiel, versie 9.2.3.</Description>
+					<TypeOfFrameRef ref="NL:BISON:TypeOfFrame:NL_TechnicalEnumerations" version="9.3.0"/>
+					<members>
 						<ValueSet id="BISON:ValueSet:TypeOfFrame_923" version="20210701">
-							<Description>Standaardenumeratie voor de soorten frames in het NL NeTEx Profiel, versie 9.2.3.</Description>
 							<values>
 								<!-- Voor het NL dienstregeling Profiel -->
 								<TypeOfFrame id="BISON:TypeOfFrame:NL_TT_BASELINE" version="9.2.3">
@@ -661,8 +703,13 @@
 								</TypeOfFrame>
 							</values>
 						</ValueSet>
+					</members>
+				</GeneralFrame>
+				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfFrame_921" version="220221202">
+					<Description>Standaardenumeratie voor de soorten frames in het NL NeTEx Profiel, versie 9.2.1.</Description>
+					<TypeOfFrameRef ref="NL:BISON:TypeOfFrame:NL_TechnicalEnumerations" version="9.3.0"/>
+					<members>
 						<ValueSet id="BISON:ValueSet:TypeOfFrame_921" version="20210701">
-							<Description>Standaardenumeratie voor de soorten frames in het NL NeTEx Profiel, versie 9.2.1.</Description>
 							<values>
 								<!-- Voor het NL dienstregeling Profiel -->
 								<TypeOfFrame id="BISON:TypeOfFrame:NL_TT_BASELINE" version="9.2.1">
@@ -758,8 +805,13 @@
 								</TypeOfFrame>
 							</values>
 						</ValueSet>
+					</members>
+				</GeneralFrame>
+				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfFrame_920" version="220221202">
+					<Description>Standaardenumeratie voor de soorten frames in het NL NeTEx Profiel, versie 9.2.0.</Description>
+					<TypeOfFrameRef ref="NL:BISON:TypeOfFrame:NL_TechnicalEnumerations" version="9.3.0"/>
+					<members>
 						<ValueSet id="BISON:ValueSet:TypeOfFrame_920" version="20210701">
-							<Description>Standaardenumeratie voor de soorten frames in het NL NeTEx Profiel, versie 9.2.0.</Description>
 							<values>
 								<!-- Voor het NL dienstregeling Profiel -->
 								<TypeOfFrame id="BISON:TypeOfFrame:NL_TT_BASELINE" version="9.2.0">
