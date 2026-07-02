@@ -7,30 +7,30 @@
 <!--                                                                                   -->
 <!-- Historie:                                                                         -->
 <!--   v20201218  (dec.2020)  initiële (concept)versie                                 -->
-<!--   v20210128  (jan.2021)  eerste volledige versie                                  -->
+<!--   v20260701  (jan.2021)  eerste volledige versie                                  -->
 <!--   v20210325  (mrt.2021)  aangepast voor NL NeTEx Profiel v9.2.1                   -->
 <!--   v20210701  (jul.2021)  aangepast voor NL NeTEx Profiel v9.2.2 en v9.2.3         -->
 <!--   v20211123  (nov.2021)  correctie id van TypeOfOrganisation 'Other'              -->
 <!--   v20221202  (dec.2022)  versienummer NL NeTEx Profiel naar v9.2.4                -->
-<!--   v20240201  (feb.2024)  versienummer NL NeTEx Profiel naar v9.3.0                -->
+<!--   v20260701  (feb.2024)  versienummer NL NeTEx Profiel naar v9.3.0                -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <PublicationDelivery xmlns="http://www.netex.org.uk/netex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.netex.org.uk/netex https://github.com/BISONNL/NeTEx-NL/raw/master/xsd/netex-nl-geen-constraints.xsd" version="ntx:1.1">
 	<PublicationTimestamp>2024-02-01T14:00:00Z</PublicationTimestamp>
 	<ParticipantRef>BISON</ParticipantRef>
 	<Description>Export van de door BISON voorgedefinieerde gegevens t.b.v. het NL NeTEx Profiel.</Description>
 	<dataObjects>
-		<CompositeFrame id="BISON:CompositeFrame:PredefinedEnumerations" version="20240201">
+		<CompositeFrame id="BISON:CompositeFrame:PredefinedEnumerations" version="20260701">
 			<Description>De door BISON vastgestelde standaardenumeraties. Deze enumeraties worden bijgehouden door BISON. Desgewenst kan men de relevante ValueSet(s) ongewijzigd(!) overnemen in een gegevenslevering conform het NL dienstregeling Profiel.</Description>
 			<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_BISON_ENUMS" version="9.3.0"/>
 			<FrameDefaults>
 				<DefaultCodespaceRef ref="BISON:Codespace:BISON"/>
 			</FrameDefaults>
 			<frames>
-				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfEquipment" version="20240201">
+				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfEquipment" version="20260701">
 					<Description>Standaardenumeratie met voorgedefinieerde soorten apparatuur m.b.t. toegankelijkheid. </Description>
 					<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_TypeOfEquipmentValues" version="9.3.0"/>
 					<members>
-						<ValueSet id="BISON:ValueSet:TypeOfEquipment" version="20210128">
+						<ValueSet id="BISON:ValueSet:TypeOfEquipment" version="20260701">
 							<values>
 								<TypeOfEquipment id="BISON:TypeOfEquipment:automaticRamp" version="1">
 									<Name>automaticRamp</Name>
@@ -53,11 +53,11 @@
 						</ValueSet>
 					</members>
 				</GeneralFrame>
-				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfActivation" version="20240201">
+				<GeneralFrame id="BISON:GeneralFrame:Predefined_TypeOfActivation" version="20260701">
 					<Description>Standaardenumeratie met voorgedefinieerde KAR-meldpunt typen.</Description>
 					<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_TypeOfActivationValues" version="9.3.0"/>
 					<members>
-						<ValueSet id="BISON:ValueSet:TypeOfActivation" version="20210128">
+						<ValueSet id="BISON:ValueSet:TypeOfActivation" version="20260701">
 							<values>
 								<TypeOfActivation id="BISON:TypeOfActivation:PreAnnouncement" version="1">
 									<Name>PreAnnouncement</Name>
@@ -83,7 +83,7 @@
 					<Description>Standaardenumeratie met voorgedefinieerde formules (lijnkenmerken).</Description>
 					<TypeOfFrameRef ref="BISON:TypeOfFrame:NL_TypeOfServiceValues" version="9.3.0"/>
 					<members>
-						<ValueSet id="BISON:ValueSet:TypeOfService" version="20210128">
+						<ValueSet id="BISON:ValueSet:TypeOfService" version="20260701">
 							<values>
 								<TypeOfService id="BISON:TypeOfService:Standaard" version="1">
 									<Name>Standaard</Name>
@@ -147,7 +147,7 @@
 								</TypeOfResponsibilityRole>
 							</values>
 						</ValueSet>
-						<ValueSet id="BISON:ValueSet:TypeOfFrame_930" version="20240201">
+						<ValueSet id="BISON:ValueSet:TypeOfFrame_930" version="20260701">
 							<Description>Standaardenumeratie voor de soorten frames in het NL NeTEx Profiel, versie 9.3.0.</Description>
 							<values>
 								<!-- Voor het NL dienstregeling Profiel -->
@@ -233,13 +233,9 @@
 									<Name>Voertuigen composite frame</Name>
 									<Description>Composite frame met de voertuigen (NL voertuigen Profiel)</Description>
 								</TypeOfFrame>
-								<TypeOfFrame id="BISON:TypeOfFrame:NL_VEH_METADATA" version="9.3.0">
+								<TypeOfFrame id="BISON:TypeOfFrame:NL_VEH_RESOURCE" version="9.3.0">
 									<Name>Vehicle metadata frame</Name>
 									<Description>Frame met de stamgegevens (NL voertuigen Profiel)</Description>
-								</TypeOfFrame>
-								<TypeOfFrame id="BISON:TypeOfFrame:NL_VEH_DATA" version="9.3.0">
-									<Name>Vehicle data frame</Name>
-									<Description>Frame met de voertuiggegevens (NL voertuigen Profiel)</Description>
 								</TypeOfFrame>
 								<!-- Voor het NL halte Profiel          -->
 								<TypeOfFrame id="BISON:TypeOfFrame:CHB" version="9.3.0">
